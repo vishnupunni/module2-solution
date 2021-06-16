@@ -14,7 +14,7 @@ h1 {
 }
 h2 {
   text-align: center;
-  background-color: darkred;
+ 
   padding: 20px;
   border: 2px black solid;
   color: rgb(1, 3, 5);
@@ -23,11 +23,17 @@ h2 {
   position: absolute;
   top: 3px;
   right: 5px;
-  box-shadow: darkcyan 3px 2px 2px;
-
   
 }
-
+.head1{
+  background-color: darkred;
+}
+.head2{
+  background-color: aquamarine;
+}
+.head3{
+  background-color: yellow;
+}
 p {
   
   width: 100%;
@@ -44,11 +50,17 @@ p {
 #p1,#p2,#p3 {
   position: relative;
   background-color: darkgrey;
-  box-shadow: 3px 1px 1px 1px;
+  
 }
-
-
-
+#p1:hover{
+  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+#p2:hover{
+  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+#p3:hover{
+  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
 .row {
     width: 100%;
 }
@@ -57,44 +69,38 @@ p {
 @media (min-width: 992px) {
 
     
-    .col-lg-4,
-    .col-lg-6,
-    .col-lg-12 {
+    .col-lg-4 {
       float: left;
       padding: 10px;
     }
 
     .col-lg-4 {
       width: 32.33%;
-      margin: 4px;
+    }  
+    #p1{
+      margin-left: 5px;
+      margin-right: 5px;
     }
-    .col-lg-6 {
-      width: 50%;
+    #p2{
+      margin-left: 5px;
+      margin-right: 5px;
     }
-      .col-lg-12 {
-      width: 100%;
+    #p3{
+      margin-left: 5px;
     }
-    
-    
+  
   }
 
   /********** Medium devices only **********/
   @media (min-width: 768px) and (max-width: 991px) {
 
-   
-    .col-md-4,
     .col-md-6,
     .col-md-12 {
       float: left;
     }
-
-    .col-md-4 {
-      width: 33.33%;
-      
-    }
     .col-md-6 {
       width: 49%;
-      margin: 4px;
+      margin: 3px;
     }
 
     .col-md-12 {
@@ -106,24 +112,24 @@ p {
 
   /******* low devices only *******/
   @media (max-width: 767px){
-    .col-lw-4,
-    .col-lw-6,
     .col-lw-12 {
       float: left;
       margin-bottom: 10px;
       border: 2px solid;
 
     }
-
-    .col-lw-4 {
-      width: 33.33%;
-    }
-
-    .col-lw-6 {
-      width: 50%;
-    }
     .col-lw-12 {
       width: 100%;
     }
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(94, 88, 88);
+    color: white;
+    text-align: center;
   }
   
