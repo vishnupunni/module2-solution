@@ -1,135 +1,134 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body{
-  background-color: rgb(230, 200, 230);
-}
-h1 {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 100px;
-  
-}
-h2 {
-  text-align: center;
- 
-  padding: 20px;
-  border: 2px black solid;
-  color: rgb(1, 3, 5);
-  display: inline-block;
-  border-radius: 20px;
-  position: absolute;
-  top: 3px;
-  right: 5px;
-  
-}
-.head1{
-  background-color: darkred;
-}
-.head2{
-  background-color: aquamarine;
-}
-.head3{
-  background-color: yellow;
-}
-p {
-  
-  width: 100%;
-  height: 250px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  font-size: larger;
-  color: rgb(15, 7, 7);
-  position: relative;
-  top: 70px;
-
-}
-#p1,#p2,#p3 {
-  position: relative;
-  background-color: darkgrey;
-  
-}
-#p1:hover{
-  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
-#p2:hover{
-  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
-#p3:hover{
-  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+* {
+  box-sizing: border-box;
 }
 .row {
-    width: 100%;
+  width: 100%;
 }
 
-/********** Large devices only **********/
-@media (min-width: 992px) {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
 
-    
-    .col-lg-4 {
-      float: left;
-      padding: 10px;
-    }
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+h2{
+  border-radius: 10px;
+}
+p {
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 
-    .col-lg-4 {
-      width: 32.33%;
-    }  
-    #p1{
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-    #p2{
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-    #p3{
-      margin-left: 5px;
-    }
+}
   
-  }
+.container{
+  height: 14rem;
+  border: black 1px solid;
+  border-radius: 10px;
+  background-color: darkgrey;
+  overflow: hidden;
 
-  /********** Medium devices only **********/
-  @media (min-width: 768px) and (max-width: 991px) {
-
-    .col-md-6,
-    .col-md-12 {
+}
+.container:hover{
+  box-shadow: 4px 5px 4px 5px lightblue;
+}
+.name1{
+  background-color: blue;
+}
+.name1:hover{
+  background-color: lightblue;
+}
+.name2{
+  background-color: blueviolet;
+}
+.name2:hover{
+  background-color: lightblue;
+}
+.name3{
+  background-color: brown;
+}
+.name3:hover{
+  background-color: lightblue;
+}
+/* -----Large Device------- */
+@media (min-width: 992px){
+  .col-lg-4{
       float: left;
-    }
-    .col-md-6 {
-      width: 49%;
-      margin: 3px;
-    }
-
-    .col-md-12 {
-      width: 100%;
-      margin-top: 10px;
-    }
+      padding-top: 30px;
+      padding-left: 25px;
+      padding-right: 25px
+      
   }
+  .col-lg-4{
+      width: 33.33%;
+      position: relative;
+  }
+  h2 {
+      text-align: center;
+      border: solid;
+      width: 100px;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+   
+   }
+}
 
 
-  /******* low devices only *******/
-  @media (max-width: 767px){
-    .col-lw-12 {
+/* -------Medium Device------- */
+@media (min-width:768px) and (max-width:991px){
+  .col-md-6,.col-md-12{
       float: left;
-      margin-bottom: 10px;
-      border: 2px solid;
-
-    }
-    .col-lw-12 {
+      position: relative;
+      padding-top: 30px;
+      padding-left: 25px;
+      padding-right: 25px
+  }
+  .col-md-6{
+      width: 50%;
+  }
+  .col-md-12{
       width: 100%;
-    }
   }
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 15%;
-    background-color: rgb(94, 88, 88);
-    color: white;
-    text-align: center;
+  h2 {
+      text-align: center;
+      border: solid;
+      width: 100px;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+   
+   }
+}
+
+
+
+/* -------Small Device------- */
+@media (max-width:767px) {
+  .col-sm-12{
+      float: left;
+      padding-top: 30px;
+      padding-left: 25px;
+      padding-right: 25px
+      
   }
-  
+  .col-sm-12{
+      width: 100%;
+      position: relative;
+  }
+  h2 {
+      text-align: center;
+      border: solid;
+      width: 100px;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+   
+   }
+
+}
